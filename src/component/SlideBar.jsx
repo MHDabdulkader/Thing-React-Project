@@ -66,7 +66,7 @@ function SlideBar() {
     console.log(pathname);
 
     return (
-        <div className="w-1/6 bg-slate-100 h-screen">
+        <div className="w-1/6 bg-slate-100  h-screen">
             <ul className="px-5 py-5">
                 {links.map((item, i) => {
                     return (
