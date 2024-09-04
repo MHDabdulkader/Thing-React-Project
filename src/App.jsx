@@ -7,6 +7,7 @@ import PageUpcoming from "./pages/PageUpcoming"
 import PageSometime from "./pages/PageSometime"
 import PageTrash from "./pages/PageTrash"
 import PageLogbook from "./pages/PageLogbook"
+import { TodoProvider } from "./context/TodoContext"
 
 
 
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <div>
-      <Routes>
+      <TodoProvider>
+        <Routes>
         <Route path="/" element={<PageInbox/>}/>
         <Route path="/today" element={<PageToday/>}/>
         <Route path="/anytime" element={<PageAnytime/>}/>
@@ -24,6 +26,8 @@ function App() {
         <Route path="/trash" element={<PageTrash/>}/>
         <Route path="/logbook" element={<PageLogbook/>}/>
       </Routes>
+      </TodoProvider>
+      
       {/* <SlideBar/> */}
     </div>
   )
