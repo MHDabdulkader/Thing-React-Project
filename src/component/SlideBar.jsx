@@ -8,51 +8,51 @@ import IconTrash from "./icons/IconTrash";
 import IconUpcoming from "./icons/IconUpcoming";
 import NavLink from "./NavLink";
 
-const imgW = 30
+const imgW = 25
 // const imgH = 30
 
 const links = [
     {
         label: "Inbox",
-        icon: <IconInbox width={imgW} />,
+        icon: <IconInbox width={imgW} height={imgW}/>,
         href: '/',
         className: 'mb-4',
         
     },
     {
         label: "Today",
-        icon: <IconToday width={imgW} />,
+        icon: <IconToday width={imgW} height={imgW}/>,
         href: '/today',
         
     },
     {
         label: "Anytime",
-        icon: <IconAnytime width={imgW} />,
+        icon: <IconAnytime width={imgW} height={imgW}/>,
         href: '/anytime',
         
     },
     {
         label: "Upcoming",
-        icon: <IconUpcoming width={imgW}  />,
+        icon: <IconUpcoming width={imgW}  height={imgW}/>,
         href: '/upcoming',
        
     },
     {
         label: "Sometime",
-        icon: <IconSomeday width={imgW}/>,
+        icon: <IconSomeday width={imgW} height={imgW}/>,
         href: '/sometime',
         className: 'mb-4',
         
     },
     {
         label: "Logbook",
-        icon: <IconLogbook width={imgW} />,
+        icon: <IconLogbook width={imgW} height={imgW}/>,
         href: '/logbook',
       
     },
     {
         label: "Trash",
-        icon: <IconTrash width={imgW} />,
+        icon: <IconTrash width={imgW} height={imgW}/>,
         href: '/trash',
         
     }
