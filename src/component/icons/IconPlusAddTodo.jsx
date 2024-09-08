@@ -1,13 +1,14 @@
-function IconPlusAddTodo() {
+function IconPlusAddTodo(props) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
         height="20"
-        fill="#000"
+        fill="#777"
         version="1.1"
         viewBox="0 0 512 512"
         xmlSpace="preserve"
+        {...props}
       >
         <g>
           <path d="M256 0C114.611 0 0 114.611 0 256s114.611 256 256 256 256-114.611 256-256S397.389 0 256 0zm0 486.4C128.759 486.4 25.6 383.249 25.6 256S128.759 25.6 256 25.6 486.4 128.759 486.4 256 383.241 486.4 256 486.4z"></path>
